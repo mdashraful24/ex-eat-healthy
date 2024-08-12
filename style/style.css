@@ -7,6 +7,8 @@
     font-style: normal;
 }
 
+
+/* Default styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,15 +16,232 @@
 }
 
 body {
-    border: 2px solid red;
-    max-width: 1440px;
+    /* border: 2px solid red; */
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
-/* Default styles */
-
 
 /* Sheared styles */
+.display-flex {
+    display: flex;
+}
 
+.pri-button {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    border-radius: 100px;
+    background: linear-gradient(to right, rgb(251, 162, 79) -6.919%, rgb(255, 30, 30) 144.985%);
+    padding: 7px 20px 7px 20px;
+}
 
 /* Main styles */
+/* Banner style */
+.banner-container {
+    /* border: 2px solid red; */
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.banner-content {
+    width: 450px;
+}
+
+.banner-content h3 {
+    color: rgb(87, 87, 87);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#orange-color {
+    color: rgb(252, 130, 17);
+}
+
+.banner-content p {
+    color: rgb(130, 130, 130);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 20px auto 30px;
+}
+
+.banner-img {
+    width: 320px;
+    min-height: 350px;
+    background: url('../asset/shapes/shape1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner-img img {
+    width: 430px;
+    position: absolute;
+    right: -7%;
+    bottom: 4%;
+}
+
+
+/* About me style */
+.about-container {
+    /* border: 2px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background-image: url('../asset/shapes/bg-img1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.about-img img {
+    width: 250px;
+}
+
+.about-contents {
+    width: 400px;
+}
+
+.about-contents h3 {
+    color: rgb(112, 112, 112);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-contents p {
+    color: rgb(24, 25, 31);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px auto 50px auto;
+}
+
+
+/* Recipes style */
+.recipes-container {
+    /* border: 2px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.recipe-contents {
+    width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.recipe-contents h3 {
+    color: rgb(103, 103, 103);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.recipe-contents p {
+    color: rgb(37, 37, 37);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 15px auto;
+}
+
+.recipes-card {
+    /* border: 2px solid red; */
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.pri-card {
+    /* border: 2px solid red; */
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.pri-card img {
+    width: 100%;
+}
+
+.pri-card h3 {
+    color: rgb(24, 25, 31);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.pri-card p {
+    color: rgb(24, 25, 31);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 10px auto;
+}
+
+
+/* Numbers style */
+.numbers-container {
+    /* border: 2px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    margin-bottom: 80px;
+}
+
+.pri-div h3 {
+    color: rgb(24, 25, 31);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.pri-div p {
+    color: rgb(24, 25, 31);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/* Footer style */
+.footer-container {
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    background: rgb(11, 13, 23);
+    padding: 35px;
+}
+
+.footer-contents {
+    text-align: center;
+}
+
+.footer-contents h3 {
+    color: rgb(91, 91, 91);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.footer-contents p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+}
