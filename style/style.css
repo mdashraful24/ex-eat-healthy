@@ -7,7 +7,6 @@
     font-style: normal;
 }
 
-
 /* Default styles */
 * {
     margin: 0;
@@ -16,11 +15,8 @@
 }
 
 body {
-    /* border: 2px solid red; */
-    /* max-width: 1200px; */
     margin: 0 auto;
 }
-
 
 /* Sheared styles */
 .display-flex {
@@ -38,11 +34,10 @@ body {
     padding: 7px 20px 7px 20px;
 }
 
-/* Main styles */
 /* Banner style */
 .banner-container {
     /* border: 2px solid red; */
-    width: 1000px;
+    max-width: 1000px;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -89,7 +84,6 @@ body {
     bottom: 4%;
 }
 
-
 /* About me style */
 .about-container {
     /* border: 2px solid red; */
@@ -126,7 +120,6 @@ body {
     line-height: 24px;
     margin: 20px auto 50px auto;
 }
-
 
 /* Recipes style */
 .recipes-container {
@@ -191,7 +184,6 @@ body {
     margin: 10px auto;
 }
 
-
 /* Numbers style */
 .numbers-container {
     /* border: 2px solid red; */
@@ -219,7 +211,6 @@ body {
     line-height: 24px;
 }
 
-
 /* Footer style */
 .footer-container {
     /* border: 2px solid red; */
@@ -244,4 +235,79 @@ body {
     font-weight: 400;
     line-height: 24px;
     margin-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Responsive media queries */
+@media screen and (max-width: 576px) {
+
+    /* Banner style */
+    .banner-container {
+        /* border: 2px solid red; */
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .banner-container {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .banner-content,
+    .banner-img {
+        width: 90%;
+        padding: 0;
+    }
+
+    /* About style */
+    .about-container {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .about-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-contents {
+        width: 90%;
+    }
+
+    .about-contents p {
+        margin-bottom: 20px;
+    }
+
+    /* Recipes style */
+    .recipes-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .recipes-card,
+    .recipe-contents {
+        width: 90%;
+    }
+
+    .pri-card,
+    .pri-card img {
+        width: 100%;
+    }
+
+    .recipes-card {
+        flex-direction: column;
+    }
+
+    /* Numbers style */
+    .numbers-container {
+        width: 90%;
+    }
+
+    /* Footer style */
+
 }
